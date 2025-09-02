@@ -1,0 +1,185 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.App {
+  min-height: 100vh;
+  background-color: #e7a54e85;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px 0;
+}
+
+.todo-create {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #f0e6d2;
+  background-image: url("img.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  max-width: 550px;
+  height: 600px;
+  padding: 20px;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+.todo-create h1 {
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 32px;
+  font-weight: 600;
+  padding: 10px;
+  background-color: #fcecec;
+  color: #848484;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.todo-create > div:first-child {
+  display: flex;
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+.todo-create input {
+  flex: 1;
+  padding: 10px;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 16px;
+  border: 1px solid #999;
+  border-radius: 3px;
+  outline: none;
+}
+
+.todo-create button {
+  padding: 10px 15px;
+  margin-left: 10px;
+  border: 1px solid #999;
+  border-radius: 3px;
+  background-color: #e86a6a;
+  color: #fff;
+  font-family: 'Times New Roman', Times, serif;
+  cursor: pointer;
+  font-size: 14px;
+  min-width: 100px; /* Tüm butonların aynı genişlikte görünmesi için */
+  text-align: center;
+}
+
+.todo-create button:hover {
+  background-color: #d55a5a;
+}
+
+.todo-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  margin-bottom: 10px;
+  background-color: #fff;
+  color: #000;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.todo-text {
+  flex: 1;
+  cursor: pointer;
+}
+
+.todo-text.completed {
+  text-decoration: line-through;
+  color: gray;
+}
+
+.todo-icons {
+  font-size: 18px;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin-top: 15px;
+}
+
+.footer select {
+  padding: 5px 8px;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 14px;
+}
+
+.footer button {
+  padding: 10px 15px;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 14px;
+  background-color: #e86a6a; /* Tamamlananları sil butonunun rengi */
+  color: #fff;
+  border: 1px solid #999;
+  border-radius: 3px;
+  cursor: pointer;
+  min-width: 100px; /* Tüm footer butonları aynı genişlikte */
+  text-align: center;
+}
+
+.footer button:hover {
+  background-color: #d55a5a;
+}
+
+.footer p {
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 17px;
+  font-weight: 700;
+  color: #575757;
+  padding: 7px;
+  border-radius: 4px;
+  background-color: #ffffffec;
+}
+
+@media (max-width: 600px) {
+  .todo-create {
+    width: 95%;
+    padding: 15px;
+  }
+
+  .todo-create input, .todo-create button, .footer button {
+    font-size: 14px;
+    padding: 8px 10px;
+  }
+
+  .todo-text {
+    font-size: 14px;
+  }
+
+  .todo-icons {
+    font-size: 16px;
+  }
+
+  .footer {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .footer select,
+  .footer button {
+    width: 100%;
+    margin-bottom: 5px;
+  }
+}
