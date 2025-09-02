@@ -25,7 +25,7 @@ html, body {
   flex-direction: column;
   align-items: center;
   background-color: #f0e6d2;
-  background-image: url("img.png");
+  background-image: url("public/decor.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
