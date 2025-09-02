@@ -1,12 +1,27 @@
 # React + Vite
+# Todo App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+React ile geliştirilmiş basit bir Todo List uygulaması. Kullanıcılar görev ekleyebilir, tamamlanan görevleri işaretleyebilir, filtreleyebilir ve tamamlanan görevleri silebilir. Tüm veriler tarayıcıda localStorage kullanılarak saklanır.
 
-Currently, two official plugins are available:
+# Dosya Yapısı ve Açıklamaları
+- src/App.jsx: Uygulamanın ana bileşeni. 
+- src/App.css: Tüm uygulamanın stil dosyası. 
+- src/components/TodoCreate.jsx: Görev ekleme, düzenleme, silme ve filtreleme işlemlerini yönetir. 
+- src/components/Todo.jsx: Her bir görev öğesini (text, tamamlanma durumu, silme ve tamamlama butonları) render eder.  
+- src/components/TodoFilter.jsx: Görevleri “Hepsi”, “Yapılacaklar” ve “Tamamlananlar” şeklinde filtrelemeyi sağlar.  
+- src/utils/localStorage.js: Görevleri tarayıcıda saklamak ve almak için yardımcı fonksiyonlar içerir.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+  
+## Kurulum
+1. Depoyu klonlayın:
+```bash
+git clone https://github.com/hacerbeyza/Todo-APP-w-React.git
 
-## Expanding the ESLint configuration
+2. Proje dizinine gidin:
+cd ToDo-APP
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+3. Bağımlılıkları yükleyin:
+npm install
+
+4. Uygulamayı başlatın:
+npm start
