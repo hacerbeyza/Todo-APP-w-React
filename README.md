@@ -12,9 +12,8 @@ React ile geliştirilmiş basit bir Todo List uygulaması. Kullanıcılar görev
 - src/utils/localStorage.js: Görevleri tarayıcıda saklamak ve almak için yardımcı fonksiyonlar içerir.
 
   
-## Kurulum
+# Kurulum
 1. Depoyu klonlayın:
-```bash
 git clone https://github.com/hacerbeyza/Todo-APP-w-React.git
 
 2. Proje dizinine gidin:
